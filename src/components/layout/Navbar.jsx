@@ -66,7 +66,7 @@ const Navbar = () => {
                 `text-sm font-medium transition-colors ${
                   isActive 
                     ? 'text-primary-500' 
-                    : isScrolled ? 'text-gray-800 hover:text-primary-500' : 'text-gray-100 hover:text-white'
+                    : isScrolled ? 'text-gray-800 hover:text-primary-500' : 'text-gray-600 hover:text-black'
                 }`
               }
             >
@@ -78,7 +78,7 @@ const Navbar = () => {
                 `text-sm font-medium transition-colors ${
                   isActive 
                     ? 'text-primary-500' 
-                    : isScrolled ? 'text-gray-800 hover:text-primary-500' : 'text-gray-100 hover:text-white'
+                    : isScrolled ? 'text-gray-800 hover:text-primary-500' : 'text-gray-600 hover:text-black'
                 }`
               }
             >
@@ -87,7 +87,7 @@ const Navbar = () => {
             <NavLink 
               to="/#about"
               className={`text-sm font-medium transition-colors ${
-                isScrolled ? 'text-gray-800 hover:text-primary-500' : 'text-gray-100 hover:text-white'
+                isScrolled ? 'text-gray-800 hover:text-primary-500' : 'text-gray-600 hover:text-black'
               }`}
             >
               About
@@ -95,7 +95,7 @@ const Navbar = () => {
             <NavLink 
               to="/#testimonials"
               className={`text-sm font-medium transition-colors ${
-                isScrolled ? 'text-gray-800 hover:text-primary-500' : 'text-gray-100 hover:text-white'
+                isScrolled ? 'text-gray-800 hover:text-primary-500' : 'text-gray-600 hover:text-black'
               }`}
             >
               Testimonials
@@ -103,7 +103,7 @@ const Navbar = () => {
             <NavLink 
               to="/#contact"
               className={`text-sm font-medium transition-colors ${
-                isScrolled ? 'text-gray-800 hover:text-primary-500' : 'text-gray-100 hover:text-white'
+                isScrolled ? 'text-gray-800 hover:text-primary-500' : 'text-gray-600 hover:text-black'
               }`}
             >
               Contact
