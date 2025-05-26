@@ -1,0 +1,492 @@
+export const jobsData = [
+  {
+    id: 'job-1',
+    title: 'Senior Software Engineer',
+    company: {
+      id: 'company-1',
+      name: 'TechCorp Inc.',
+      industry: 'Technology',
+      logo: 'https://images.pexels.com/photos/5082576/pexels-photo-5082576.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2',
+      description: 'TechCorp is a leading software development company specializing in enterprise solutions.',
+      website: 'https://www.techcorp-example.com'
+    },
+    location: {
+      city: 'San Francisco',
+      state: 'CA',
+      remote: false
+    },
+    type: 'Full-time',
+    experience: 'Senior Level',
+    salary: 120000,
+    postedAt: '2 days ago',
+    description: 'We are seeking a talented Senior Software Engineer to join our dynamic team. In this role, you will be responsible for developing high-quality applications, collaborating with cross-functional teams, and mentoring junior developers.',
+    responsibilities: [
+      'Design and develop high-quality software solutions',
+      'Collaborate with cross-functional teams to define, design, and ship new features',
+      'Write clean, maintainable code with appropriate tests',
+      'Review code produced by other developers',
+      'Mentor junior developers and help them grow technically',
+      'Participate in architectural discussions and help make critical design decisions'
+    ],
+    requirements: [
+      '5+ years of experience in software development',
+      'Strong proficiency in JavaScript, TypeScript, and React',
+      'Experience with Node.js and backend development',
+      'Solid understanding of data structures, algorithms, and software design',
+      'Experience with CI/CD pipelines and DevOps practices',
+      'Bachelors degree in Computer Science or equivalent experience'
+    ],
+    benefits: [~
+      'Competitive salary and equity package',
+      'Health, dental, and vision insurance',
+      'Flexible work hours and remote work options',
+      'Professional development budget',
+      'Gym membership',
+      'Unlimited PTO'
+    ],
+    tags: ['JavaScript', 'TypeScript', 'React', 'Node.js', 'AWS'],
+    category: 'Software Development',
+    vacancies: 2
+  },
+  {
+    id: 'job-2',
+    title: 'Product Manager',
+    company: {
+      id: 'company-2',
+      name: 'InnovateTech',
+      industry: 'Technology',
+      logo: 'https://images.pexels.com/photos/1337384/pexels-photo-1337384.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2',
+      description: 'InnovateTech is a fast-growing startup focused on creating innovative products that solve real-world problems.',
+      website: 'https://www.innovatetech-example.com'
+    },
+    location: {
+      city: 'New York',
+      state: 'NY',
+      remote: true
+    },
+    type: 'Full-time',
+    experience: 'Mid Level',
+    salary: 110000,
+    postedAt: '1 week ago',
+    description: 'Were looking for a Product Manager who is passionate about building products that customers love. You will work with engineering, design, and marketing teams to deliver a seamless product experience.',
+    responsibilities: [
+      'Define the product vision, strategy, and roadmap',
+      'Conduct market research and analyze user needs',
+      'Work closely with engineering and design teams to deliver features',
+      'Prioritize features and create detailed product requirements',
+      'Track and measure product performance using data',
+      'Communicate product plans and updates to stakeholders'
+    ],
+    requirements: [
+      '3+ years of experience in product management',
+      'Strong analytical skills and data-driven decision making',
+      'Excellent communication and presentation skills',
+      'Experience with agile methodologies',
+      'Understanding of UX design principles',
+      'Bachelors degree in a relevant field'
+    ],
+    benefits: [
+      'Competitive salary and equity',
+      'Comprehensive health benefits',
+      'Remote work options',
+      'Professional development opportunities',
+      'Team retreats and social events',
+      '401(k) matching'
+    ],
+    tags: ['Product Management', 'Agile', 'UX', 'Strategy', 'SaaS'],
+    category: 'Product',
+    vacancies: 1
+  },
+  {
+    id: 'job-3',
+    title: 'UI/UX Designer',
+    company: {
+      id: 'company-3',
+      name: 'DesignFusion',
+      industry: 'Design Agency',
+      logo: 'https://images.pexels.com/photos/6375330/pexels-photo-6375330.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2',
+      description: 'DesignFusion is a creative design agency that crafts beautiful and user-friendly digital experiences for brands.',
+      website: 'https://www.designfusion-example.com'
+    },
+    location: {
+      city: 'Los Angeles',
+      state: 'CA',
+      remote: false
+    },
+    type: 'Full-time',
+    experience: 'Mid Level',
+    salary: 95000,
+    postedAt: '3 days ago',
+    description: 'We are seeking a talented UI/UX Designer to create amazing user experiences. The ideal candidate should have an eye for clean and artful design, possess superior UI skills, and be able to translate high-level requirements into interaction flows and artifacts.',
+    responsibilities: [
+      'Create user-centered designs by understanding business requirements, user feedback, and usability findings',
+      'Design UI elements and build prototypes',
+      'Create original graphic designs (e.g., images, sketches, and tables)',
+      'Identify and troubleshoot UX problems',
+      'Conduct layout adjustments based on user feedback',
+      'Collaborate with cross-functional teams'
+    ],
+    requirements: [
+      '3+ years of UI/UX design experience',
+      'Strong portfolio of design projects',
+      'Proficiency in design tools (Figma, Adobe XD, Sketch)',
+      'Understanding of interaction design and information architecture',
+      'Knowledge of HTML/CSS/JavaScript is a plus',
+      'Excellent communication skills'
+    ],
+    benefits: [
+      'Competitive salary',
+      'Health and dental benefits',
+      'Flexible working hours',
+      'Creative office environment',
+      'Professional development opportunities',
+      'Paid time off'
+    ],
+    tags: ['UI', 'UX', 'Figma', 'Design', 'Prototyping'],
+    category: 'Design',
+    vacancies: 2
+  },
+  {
+    id: 'job-4',
+    title: 'Data Scientist',
+    company: {
+      id: 'company-4',
+      name: 'DataDriven',
+      industry: 'Data Analytics',
+      logo: 'https://images.pexels.com/photos/4344860/pexels-photo-4344860.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2',
+      description: 'DataDriven is a data analytics company that helps businesses make better decisions through advanced analytics and machine learning.',
+      website: 'https://www.datadriven-example.com'
+    },
+    location: {
+      city: 'Boston',
+      state: 'MA',
+      remote: true
+    },
+    type: 'Full-time',
+    experience: 'Senior Level',
+    salary: 130000,
+    postedAt: '5 days ago',
+    description: 'Were looking for a Data Scientist to help us discover the information hidden in vast amounts of data, and help us make smarter decisions to deliver even better products. Your primary focus will be in applying data mining techniques, doing statistical analysis, and building high quality prediction systems.',
+    responsibilities: [
+      'Develop machine learning models and algorithms to solve business problems',
+      'Process, cleanse, and verify the integrity of data used for analysis',
+      'Conduct data analysis and interpretation',
+      'Build data visualizations to communicate insights',
+      'Collaborate with product and engineering teams',
+      'Stay up-to-date with latest ML/AI research and technologies'
+    ],
+    requirements: [
+      '4+ years of experience in data science',
+      'Strong proficiency in Python and data science libraries',
+      'Experience with machine learning frameworks',
+      'Statistical knowledge and experience with techniques like regression, decision trees, etc.',
+      'Experience with data visualization tools',
+      'Masters or PhD in Computer Science, Statistics, or related field'
+    ],
+    benefits: [
+      'Competitive salary package',
+      'Health, dental, and vision insurance',
+      'Remote work flexibility',
+      'Conference attendance and learning budget',
+      'Stock options',
+      'Wellness program'
+    ],
+    tags: ['Python', 'Machine Learning', 'Statistics', 'SQL', 'Data Visualization'],
+    category: 'Data Science',
+    vacancies: 1
+  },
+  {
+    id: 'job-5',
+    title: 'Marketing Manager',
+    company: {
+      id: 'company-5',
+      name: 'GrowthGenius',
+      industry: 'Marketing',
+      logo: 'https://images.pexels.com/photos/5076531/pexels-photo-5076531.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2',
+      description: 'GrowthGenius is a marketing agency that specializes in helping startups and small businesses grow through effective digital marketing strategies.',
+      website: 'https://www.growthgenius-example.com'
+    },
+    location: {
+      city: 'Chicago',
+      state: 'IL',
+      remote: false
+    },
+    type: 'Full-time',
+    experience: 'Mid Level',
+    salary: 85000,
+    postedAt: '1 week ago',
+    description: 'We are looking for a Marketing Manager to lead our marketing efforts and drive growth for our clients. The ideal candidate will have a strong background in digital marketing, excellent project management skills, and the ability to develop and implement effective marketing strategies.',
+    responsibilities: [
+      'Develop and implement marketing strategies for clients',
+      'Manage social media campaigns and digital advertising',
+      'Create content marketing plans and oversee execution',
+      'Analyze marketing data and optimize campaigns',
+      'Manage a team of marketing specialists',
+      'Report on marketing performance to clients and stakeholders'
+    ],
+    requirements: [
+      '3+ years of experience in digital marketing',
+      'Strong understanding of social media, SEO, and content marketing',
+      'Experience with marketing analytics tools',
+      'Excellent communication and presentation skills',
+      'Project management experience',
+      'Bachelors degree in Marketing or related field'
+    ],
+    benefits: [
+      'Competitive salary',
+      'Performance bonuses',
+      'Health insurance',
+      'Professional development budget',
+      'Casual work environment',
+      'Paid vacation and sick leave'
+    ],
+    tags: ['Digital Marketing', 'Social Media', 'SEO', 'Content Marketing', 'Analytics'],
+    category: 'Marketing',
+    vacancies: 1
+  },
+  {
+    id: 'job-6',
+    title: 'DevOps Engineer',
+    company: {
+      id: 'company-1',
+      name: 'TechCorp Inc.',
+      industry: 'Technology',
+      logo: 'https://images.pexels.com/photos/5082576/pexels-photo-5082576.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2',
+      description: 'TechCorp is a leading software development company specializing in enterprise solutions.',
+      website: 'https://www.techcorp-example.com'
+    },
+    location: {
+      city: 'Seattle',
+      state: 'WA',
+      remote: true
+    },
+    type: 'Full-time',
+    experience: 'Mid Level',
+    salary: 115000,
+    postedAt: '2 weeks ago',
+    description: 'We are looking for a DevOps Engineer to help us build and maintain our infrastructure and deployment systems. You will be responsible for maintaining our CI/CD pipelines, managing cloud infrastructure, and ensuring the reliability and security of our systems.',
+    responsibilities: [
+      'Design and implement CI/CD pipelines',
+      'Manage cloud infrastructure on AWS',
+      'Implement security best practices',
+      'Automate system deployment and scaling',
+      'Monitor system performance and troubleshoot issues',
+      'Collaborate with development teams to improve infrastructure'
+    ],
+    requirements: [
+      '3+ years of experience in DevOps or similar role',
+      'Strong knowledge of AWS services',
+      'Experience with containerization technologies like Docker and Kubernetes',
+      'Scripting and automation experience (Python, Bash)',
+      'Understanding of infrastructure as code (Terraform, CloudFormation)',
+      'Experience with monitoring and logging tools'
+    ],
+    benefits: [
+      'Competitive salary and equity package',
+      'Health, dental, and vision insurance',
+      'Flexible work hours and remote work options',
+      'Professional development budget',
+      'Gym membership',
+      'Unlimited PTO'
+    ],
+    tags: ['DevOps', 'AWS', 'Docker', 'Kubernetes', 'Terraform', 'CI/CD'],
+    category: 'DevOps',
+    vacancies: 1
+  },
+  {
+    id: 'job-7',
+    title: 'Frontend Developer',
+    company: {
+      id: 'company-3',
+      name: 'DesignFusion',
+      industry: 'Design Agency',
+      logo: 'https://images.pexels.com/photos/6375330/pexels-photo-6375330.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2',
+      description: 'DesignFusion is a creative design agency that crafts beautiful and user-friendly digital experiences for brands.',
+      website: 'https://www.designfusion-example.com'
+    },
+    location: {
+      city: 'Austin',
+      state: 'TX',
+      remote: false
+    },
+    type: 'Full-time',
+    experience: 'Entry Level',
+    salary: 75000,
+    postedAt: '3 days ago',
+    description: 'We are seeking a talented Frontend Developer to join our creative team. The ideal candidate will have a strong understanding of web technologies and a passion for creating beautiful, responsive user interfaces.',
+    responsibilities: [
+      'Develop responsive and accessible web interfaces',
+      'Implement designs and wireframes into functional web pages',
+      'Write clean, maintainable, and reusable code',
+      'Collaborate with designers and backend developers',
+      'Optimize applications for maximum speed and scalability',
+      'Stay up-to-date with emerging frontend technologies'
+    ],
+    requirements: [
+      '1-3 years of frontend development experience',
+      'Strong proficiency in HTML, CSS, and JavaScript',
+      'Experience with modern frontend frameworks (React, Vue, or Angular)',
+      'Knowledge of responsive design principles',
+      'Understanding of cross-browser compatibility issues',
+      'Bachelors degree in Computer Science or equivalent experience'
+    ],
+    benefits: [
+      'Competitive salary',
+      'Health and dental benefits',
+      'Flexible working hours',
+      'Creative office environment',
+      'Professional development opportunities',
+      'Paid time off'
+    ],
+    tags: ['JavaScript', 'React', 'HTML', 'CSS', 'Frontend'],
+    category: 'Software Development',
+    vacancies: 3
+  },
+  {
+    id: 'job-8',
+    title: 'Customer Success Manager',
+    company: {
+      id: 'company-2',
+      name: 'InnovateTech',
+      industry: 'Technology',
+      logo: 'https://images.pexels.com/photos/1337384/pexels-photo-1337384.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2',
+      description: 'InnovateTech is a fast-growing startup focused on creating innovative products that solve real-world problems.',
+      website: 'https://www.innovatetech-example.com'
+    },
+    location: {
+      city: 'Denver',
+      state: 'CO',
+      remote: true
+    },
+    type: 'Full-time',
+    experience: 'Mid Level',
+    salary: 80000,
+    postedAt: '4 days ago',
+    description: 'Were looking for a Customer Success Manager to ensure our clients get the most out of our product and have an exceptional experience. You will be the primary point of contact for our customers, building relationships and driving product adoption.',
+    responsibilities: [
+      'Manage a portfolio of customers and ensure their success',
+      'Conduct regular check-ins and quarterly business reviews',
+      'Drive product adoption and identify upsell opportunities',
+      'Work with customers to achieve their business goals',
+      'Collaborate with product, sales, and support teams',
+      'Develop best practices and strategies for customer success'
+    ],
+    requirements: [
+      '2+ years in customer success, account management, or similar role',
+      'Strong communication and relationship-building skills',
+      'Problem-solving abilities and proactive attitude',
+      'Experience with CRM tools',
+      'Understanding of SaaS business models',
+      'Bachelors degree in a relevant field'
+    ],
+    benefits: [
+      'Competitive salary and equity',
+      'Comprehensive health benefits',
+      'Remote work options',
+      'Professional development opportunities',
+      'Team retreats and social events',
+      '401(k) matching'
+    ],
+    tags: ['Customer Success', 'SaaS', 'Account Management', 'CRM'],
+    category: 'Customer Success',
+    vacancies: 2
+  },
+  {
+    id: 'job-9',
+    title: 'Financial Analyst',
+    company: {
+      id: 'company-6',
+      name: 'FinEdge Capital',
+      industry: 'Finance',
+      logo: 'https://images.pexels.com/photos/210574/pexels-photo-210574.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2',
+      description: 'FinEdge Capital is a financial services firm providing investment management and advisory services to clients.',
+      website: 'https://www.finedge-example.com'
+    },
+    location: {
+      city: 'New York',
+      state: 'NY',
+      remote: false
+    },
+    type: 'Full-time',
+    experience: 'Entry Level',
+    salary: 70000,
+    postedAt: '1 week ago',
+    description: 'We are seeking a detail-oriented Financial Analyst to join our team. In this role, you will analyze financial data, prepare reports, and support decision-making processes. This is an excellent opportunity for someone who is analytical, organized, and looking to grow in the financial industry.',
+    responsibilities: [
+      'Analyze financial data and prepare reports',
+      'Create financial models and forecasts',
+      'Support budgeting and planning processes',
+      'Monitor financial performance against goals',
+      'Identify trends and provide insights',
+      'Prepare presentations for management'
+    ],
+    requirements: [
+      'Bachelors degree in Finance, Accounting, or related field',
+      'Strong analytical and quantitative skills',
+      'Proficiency in Excel and financial modeling',
+      'Attention to detail and problem-solving abilities',
+      'Knowledge of financial reporting principles',
+      'Excellent written and verbal communication skills'
+    ],
+    benefits: [
+      'Competitive salary and bonus structure',
+      'Health, dental, and vision insurance',
+      'Retirement plan with company match',
+      'Professional certification support',
+      'Paid time off and holidays',
+      'Career development opportunities'
+    ],
+    tags: ['Finance', 'Financial Analysis', 'Excel', 'Accounting', 'Reporting'],
+    category: 'Finance',
+    vacancies: 1
+  },
+  {
+    id: 'job-10',
+    title: 'HR Specialist',
+    company: {
+      id: 'company-7',
+      name: 'PeopleFirst',
+      industry: 'Human Resources',
+      logo: 'https://images.pexels.com/photos/6476254/pexels-photo-6476254.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2',
+      description: 'PeopleFirst is a human resources consulting firm that helps organizations build better workplaces through effective HR practices.',
+      website: 'https://www.peoplefirst-example.com'
+    },
+    location: {
+      city: 'Minneapolis',
+      state: 'MN',
+      remote: true
+    },
+    type: 'Full-time',
+    experience: 'Mid Level',
+    salary: 65000,
+    postedAt: '2 days ago',
+    description: 'We are looking for an HR Specialist to join our growing team. The ideal candidate will have experience in various HR functions and a passion for creating positive employee experiences. This role will involve supporting our clients with their HR needs and implementing best practices.',
+    responsibilities: [
+      'Manage recruitment and onboarding processes',
+      'Handle employee relations issues',
+      'Maintain HR policies and procedures',
+      'Process payroll and benefits administration',
+      'Support performance management systems',
+      'Provide HR advice to managers and employees'
+    ],
+    requirements: [
+      '3+ years of experience in HR roles',
+      'Knowledge of HR practices and employment laws',
+      'Experience with HRIS and applicant tracking systems',
+      'Strong interpersonal and communication skills',
+      'Problem-solving abilities and discretion',
+      'Bachelors degree in Human Resources or related field'
+    ],
+    benefits: [
+      'Competitive salary',
+      'Comprehensive benefits package',
+      'Remote work flexibility',
+      'Professional development support',
+      'Work-life balance programs',
+      'Paid time off'
+    ],
+    tags: ['HR', 'Recruitment', 'Benefits', 'Employee Relations', 'HRIS'],
+    category: 'Human Resources',
+    vacancies: 1
+  }
+]
