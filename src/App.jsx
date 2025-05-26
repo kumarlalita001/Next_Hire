@@ -33,6 +33,7 @@ function App() {
   }
 
   return (
+    <div className='overflow-hidden'>
     <Suspense fallback={<Loader fullScreen />}>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -60,6 +61,7 @@ function App() {
         </Route>
       </Routes>
     </Suspense>
+    </div>
   )
 }
 
