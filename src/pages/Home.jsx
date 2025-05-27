@@ -70,7 +70,7 @@ const Home = () => {
       {/* Hero Section with Parallax and Video Background */}
       <section 
         ref={targetRef}
-        className="relative h-screen flex items-center justify-center overflow-hidden"
+        className="relative  bg-gradient-to-r from-secondary-600 to-primary-600 h-screen flex items-center justify-center overflow-hidden"
       >
         {/* Video Background */}
         <div className="video-bg-container">
@@ -125,7 +125,7 @@ const Home = () => {
               </div>
               <Link 
                 to="/jobs"
-                className="btn-primary text-center py-3 md:w-auto"
+                className="btn-primary px-2 text-center py-3 md:w-auto"
               >
                 Search Jobs
               </Link>
