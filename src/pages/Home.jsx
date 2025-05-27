@@ -70,7 +70,7 @@ const Home = () => {
       {/* Hero Section with Parallax and Video Background */}
       <section 
         ref={targetRef}
-        className="relative  bg-gradient-to-r from-secondary-600 to-primary-600 h-screen flex items-center justify-center overflow-hidden"
+        className="relative  bg-gradient-to-r from-secondary-700 to-primary-800 h-screen flex items-center justify-center overflow-hidden"
       >
         {/* Video Background */}
         <div className="video-bg-container">
@@ -94,7 +94,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-white mb-6 text-5xl md:text-6xl font-bold"
+            className="text-white mb-6 text-4xl font-serif md:text-6xl font-bold"
           >
             Find Your Dream Job <span className="text-primary-500">Today</span>
           </motion.h1>
@@ -102,7 +102,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-gray-200 text-lg md:text-xl max-w-3xl mx-auto mb-8"
+            className="text-gray-200 text-lg  md:text-xl max-w-3xl mx-auto mb-8"
           >
             Connect with thousands of employers and find the perfect job opportunity that matches your skills, experience, and career goals.
           </motion.p>
