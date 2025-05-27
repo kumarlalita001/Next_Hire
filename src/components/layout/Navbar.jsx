@@ -181,9 +181,9 @@ const Navbar = () => {
             className="md:hidden focus:outline-none"
           >
             {isOpen ? (
-              <FiX className={isScrolled ? 'text-gray-800' : 'text-white'} size={24} />
+              <FiX className={isScrolled ? 'text-gray-800' : 'text-gray-800'} size={24} />
             ) : (
-              <FiMenu className={isScrolled ? 'text-gray-800' : 'text-white'} size={24} />
+              <FiMenu className={isScrolled ? 'text-gray-800' : 'text-gray-800'} size={24} />
             )}
           </button>
         </div>
