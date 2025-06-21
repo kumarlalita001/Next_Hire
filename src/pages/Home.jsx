@@ -10,6 +10,7 @@ import { FiMail,FiPhone } from 'react-icons/fi'
 import heroVideo from '@assets/videos/hero-video.mp4'
 import JobGuide from '../components/home/JobGuide'
 import Testimonals from '../components/home/Testimonals'
+import HowItWorks from '../components/home/HowItWorks'
 
 const Home = () => {
   // Intersection observer hooks for animations
@@ -72,7 +73,7 @@ const Home = () => {
       {/* Hero Section with Parallax and Video Background */}
       <section 
         ref={targetRef}
-        className="relative  bg-gradient-to-r from-secondary-700 to-primary-800 h-screen flex items-center justify-center overflow-hidden"
+        className="relative  bg-gradient-to-r from-primary-500-800 to-primary-700 h-screen flex items-center justify-center overflow-hidden"
       >
         {/* Video Background */}
         <div className="video-bg-container">
@@ -83,7 +84,7 @@ const Home = () => {
             muted 
             playsInline
           >
-            <source src={heroVideo} type="video/mp4" />
+            <source src={"https://res.cloudinary.com/dnmf6sewr/video/upload/v1750495715/hero-video_kki864.mp4"} type="video/mp4" />
           </video>
           <div className="video-overlay"></div>
         </div>
@@ -493,6 +494,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/*How is works */}
+      <HowItWorks/>
 
       {/* Testimonal section */}
       <Testimonals/>
