@@ -43,6 +43,8 @@ const Home = () => {
   
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "40%"])
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
+
+  //https://res.cloudinary.com/dsfj4rxmf/video/upload/v1750495741/heroVideo2_xetpsx.mp4
   
   // Activate animation elements when they come into view
   useEffect(() => {
