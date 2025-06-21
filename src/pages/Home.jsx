@@ -8,6 +8,8 @@ import { useInView } from 'react-intersection-observer'
 import { FiMail,FiPhone } from 'react-icons/fi'
 // Import hero background video
 import heroVideo from '@assets/videos/hero-video.mp4'
+import JobGuide from '../components/home/JobGuide'
+import Testimonals from '../components/home/Testimonals'
 
 const Home = () => {
   // Intersection observer hooks for animations
@@ -323,7 +325,9 @@ const Home = () => {
           </div>
         </div>
       </section>
-      
+
+      {/* Job Guide */}
+      <JobGuide/>      
       {/* Stats Section */}
       <section 
         ref={statsRef}
@@ -489,6 +493,10 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Testimonal section */}
+      <Testimonals/>
+      
       
       {/* Contact and Map Section */}
       <section 
