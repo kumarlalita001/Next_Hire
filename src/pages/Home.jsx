@@ -11,6 +11,7 @@ import heroVideo from '@assets/videos/hero-video.mp4'
 import JobGuide from '../components/home/JobGuide'
 import Testimonals from '../components/home/Testimonals'
 import HowItWorks from '../components/home/HowItWorks'
+import JobFinder from '../components/home/JobFinder'
 
 const Home = () => {
   // Intersection observer hooks for animations
@@ -45,7 +46,7 @@ const Home = () => {
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
 
   //https://res.cloudinary.com/dsfj4rxmf/video/upload/v1750495741/heroVideo2_xetpsx.mp4
-  
+  //sk guru
   // Activate animation elements when they come into view
   useEffect(() => {
     const animateElements = document.querySelectorAll('.animate-on-scroll')
@@ -78,9 +79,9 @@ const Home = () => {
         className="relative  bg-gradient-to-r from-primary-500-800 to-primary-700 h-screen flex items-center justify-center overflow-hidden"
       >
         {/* Video Background */}
-        <div className="video-bg-container">
+        <div className="video-bg-container ">
           <video 
-            className="video-bg"
+            className="video-bg absolute inset-0 object-cover w-full h-full "
             autoPlay 
             loop 
             muted 
@@ -88,7 +89,7 @@ const Home = () => {
           >
             <source src={"https://res.cloudinary.com/dnmf6sewr/video/upload/v1750495715/hero-video_kki864.mp4"} type="video/mp4" />
           </video>
-          <div className="video-overlay"></div>
+          {/* <div className="video-overlay "></div> */}
         </div>
         
         <motion.div 
@@ -170,6 +171,12 @@ const Home = () => {
           </motion.div>
         </div>
       </section>
+
+      {/* JOb Finder */}
+      <JobFinder/>
+
+        {/* Job Guide */}
+       <JobGuide/>  
       
       {/* Features Section */}
       <section 
@@ -281,6 +288,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+          
       
       {/* About Us Section */}
       <section 
@@ -329,8 +337,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Job Guide */}
-      <JobGuide/>      
+     
+     
       {/* Stats Section */}
       <section 
         ref={statsRef}
