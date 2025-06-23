@@ -308,6 +308,7 @@ import {
   Wrench,
   Headphones,
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 // 18 job categories with icons
 const categoryIcons = {
@@ -344,6 +345,7 @@ const mockCategories = Object.entries(categoryIcons).map(([name, icon]) => ({
 }));
 
 export default function JobFinder() {
+  const navigate = useNavigate();
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -395,6 +397,7 @@ export default function JobFinder() {
         >
           {mockCategories.map((category, index) => (
             <motion.div
+             onClick={()=> navigate("/jobs")}
               key={index}
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}

@@ -123,7 +123,7 @@ const Navbar = () => {
                     alt={user.name}
                     className="w-8 h-8 rounded-full object-cover border-2 border-primary-500"
                   />
-                  <span className={isScrolled ? 'text-gray-800' : 'text-white'}>
+                  <span className={isScrolled ? 'text-gray-800' : 'text-black'}>
                     {user.name}
                   </span>
                 </button>
